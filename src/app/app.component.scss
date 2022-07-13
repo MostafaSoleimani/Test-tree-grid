@@ -1,0 +1,30 @@
+.ngm-tree-grid {
+  // padding: 5px;
+  border: 1px solid #0000001f;
+}
+
+.tree-grid-titles {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  div {
+    padding: 2px;
+    border: 1px solid #0000001f;
+    min-width: 100px;
+    height: 40px;
+  }
+
+  & > div {
+    &:first-child {
+      padding: 2px 1px;
+      width: 30%;
+    }
+  }
+}
+
+.tree-grid-search {
+  max-width: 200px;
+}

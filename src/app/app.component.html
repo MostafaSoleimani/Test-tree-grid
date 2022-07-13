@@ -1,0 +1,18 @@
+<div class="tree-grid">
+  <ngm-tree-grid
+    [dataSource]="dataSource"
+    [config]="treeGridConfig"
+    (expand)="onExpand($event)"
+    (collapse)="onCollapse($event)"
+  >
+    <ng-template #treeGridCell let-item>
+      <div>
+        {{ item.name }}
+      </div>
+    </ng-template>
+
+    <ng-template #treeGridCell let-item>
+      <input type="text" [(ngModel)]="item.name" />
+    </ng-template>
+  </ngm-tree-grid>
+</div>
